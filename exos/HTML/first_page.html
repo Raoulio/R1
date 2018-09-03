@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/style_css1.css" media="all">
+        <title> My First Page | Julian </title>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+    <!-- Commentaires comme ça -->
+
+    Un Texte sans balise
+    <br> <!-- retour ligne -->
+    <h1> My First Page du coup | Titre H1</h1>
+ 
+        
+    <h2 id="pos_liens"> Liste de liens </h2>
+            <table border=0>
+                <tr>
+                    <td> <a href="second_page.html"> Second Page </a> </td>
+                    <td> <a href="/photos/thumbnails.html"> Thumbnails </a> </td>
+                    <td> <a href="cart.html"> Panier </a> </td>
+                    <td> <a href="second_page.html" target="_blank"> Second Page Nouvel Onglet</a> </td>
+                    <td> <a href="second_page.html" target="nomdefenetre"> Second Page Onglet nomdefenetre</a> </td>
+                </tr>
+            </table>
+        
+        
+        
+        
+        
+
+        <ol type="I"> <!-- Liste Numéroté   = balise ol -->
+            <li> <a href="#pos_fruits"> Fruits </a> </li>
+            <li> <a href="#pos_balises"> Balises </a> </li>
+            <li> <a href="#pos_liens"> Liens <em> test balise em </em> </a> </li>
+            <li> <a href="#pos_images"> Images </a> </li>
+        </ol>
+            
+            
+    <p> Blablablabla en tout cas paragraphe... </p>
+        
+    <h2 id="pos_fruits"> Liste de Fruits | Titre H2 </h2>
+        <ul type="square">  <!-- Liste Non Numéroté = balise ul -->
+            <li> Pommes </li>
+            <li> <strong> Poires </strong> Poires </li>
+            <li> Raisins </li>
+        </ul>
+    <h2 id="pos_balises"> Liste de balise de liens | Titre H2 </h2>
+            <a href="../page.html" text="Page html"> Page </a> <br><!-- vers une page une arborescence avant ../ adressage relatif-->
+            <a href="http://www.monsite.com" > Site </a><br><!-- vers un site -->
+            <a href="mailto moi@moi.fr" > Mail </a><br><!-- vers un mail  NE PAS FAIRE -->
+            <a href="#position" > Position </a><br><!-- vers une position dans la page reférence à une ID d'une balise -->   
+
+        
+    <h2 id="pos_images"> Affichage d'images </h2>
+            
+            <img src="img/chargement.gif"
+                 alt="Logo charge"
+                 width="100"
+                 height="100" />
+        <!-- Formats d'images   jpeg= efficace mais destructif couleurs en 24 bits 
+                                png= gère la transparence sur 8 bits, peut reduire le nombre de couleurs, non destructif
+                                gif = destructif et limitant le nombre de couleurs (max256)
+        -->
+    <h2 id="pos_tables"> Tableaux </h2> 
+        <!-- Ne pas faire de mise en page avec !!! td equilibrés dans chaque tr sinon utiliser l'attribut colspan -->
+
+    <table>
+    <!-- Attributs : border - cellpadding - cellspacing - widht -->
+        <tr>
+            <td>Ligne 1 | Col 1 </td>
+            <td>Ligne 1 | Col 2 </td>
+        </tr>
+        <tr>
+            <td>Ligne 2 | Col 1 </td>
+            <td>Ligne 2 | Col 2 </td>
+        </tr>
+
+    </table>
+
+
+        
+    </body>
+
+</html>
+
+
