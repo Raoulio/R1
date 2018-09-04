@@ -1,0 +1,67 @@
+* {box-sizing: border-box;}/* permet au navigateur de gerer paddind et margin sans depasser la taille definie. le *{} genere une classe pour tous */ 
+table-layout="fixed";
+body {
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: white;
+    color: #325050;
+    width: 75%;
+    padding: 10px;
+    border-left: 1px double black;
+    border-right: 1px double black;
+    margin: 5px auto;
+            }
+h1, h2 {
+  padding: 0 10%;
+  margin: 0;
+  color: #000;
+  font-weight: normal;
+}
+h1 {
+  padding-top: 0;
+  padding-bottom: 5px;
+  border-bottom: none;
+  font-size: 3.2em;
+  text-transform: uppercase;
+}
+}
+h2 {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  border-top: none;
+  color: rgba(255,255,255,0.6);
+  font-size: 1.6em;
+  font-style: italic;
+}
+div{
+    
+    border: 1px solid gray;
+    padding: 8px;
+    
+    
+}
+
+.actif{
+color:aquamarine; 
+    
+    
+}
+
+legend{
+font-size: 80%    
+
+    
+}
+.navbar{
+background: white;
+margin: 0.5em 0;
+padding: 0.3em;
+border-right: 2px solid black;
+border-left: 2px solid black;
+border-bottom: 2x solid black;
+border-top: 2px solid black;
+    
+    
+    
+    
+}
