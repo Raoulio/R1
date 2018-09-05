@@ -1,53 +1,268 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <!--     <link rel="stylesheet" type="text/css" href="/css/style_css2.css" media="all">    -->
+    <title> Test de Display </title>
+    
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="/css/style_css2.css" media="all">
-        <title> Test de Display </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+        * {
+            box-sizing: border-box;
+        }
         
-        <meta charset="utf-8">
-        <style>
-            .ilblock{ display: inline-block;
-                border: 1px solid black;
-                float: left;
+        body{
+            width: 75%;
+            margin: 25px auto;
+            background-color: #552222;
+            font-family:Titillium Web;
+            color:black;
+            font-size: 10px;
+            
+        }
+ /*       .ilblock{ display: inline-block;
+            border: 1px solid black;
+            float: left;
+            
+            
+        }
+        nl{
+            margin: auto;
+            padding-top: 2px;
+            padding-bottom: 75%;
+            */
+       
+        header{
+            float:none;
+            position: relative;
+            background-color: rgba(200,255,255,.6);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
                         
-                
-            }
-            nl{
-                margin: auto;
-                padding-top: 2px;
-                padding-bottom: 75%;
-                
-                
-            }
-            header{
+        }
+        .sidenav{
+            width: 28%;
+            margin-right: 2%;
+            border-radius: 10px;
+            background-color: chocolate;
+            display: inline-block;
+            vertical-align: top;
+            
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav li{
+ /*           margin-bottom: 5px;   */
+        }
+        nav a:hover {
+/*            color:red;
+            text-decoration: underline;  */
+            
+            
+        }
+        section {
+            width: 70%;
+            padding: 3%;
+            background-color: aqua;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 10px;
+        }
+        footer{
+            border-radius: 10px;
+            padding: 3%;
+            margin-top: 15px;
+            background-color: black;
+            color: white;
+            vertical-align: top;
+            
+        }
+        a{
+ /*           text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;   */
+        }
+        h1{
 
-                
+        }
+        figure{
+            position: relative;
+            width: 50%;
+            margin: 10px auto;
+        }
+        figure img{
+            width: 100%;
+        }
+        figcaption {
+            position: absolute;
+            bottom: 5px;
+            padding: 5px;
+            font-size: 16px;
+            background-color: rgba(255,255,255,0.6);
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            
+            
+        }
+        .lettrine {
+            float: left;
+            margin-right: 8px;
+        }
+        .navbar {
+            position: relative;
+            display: inline-block;
+            border: 1px solid black;
+            vertical-align: bottom;
+            border-radius: 10px;
+            padding: 1px;
+            color: black;
+            margin: 1px 2%;
+            font-size: 8px;
+            font-weight: normal;
+            text-decoration: none;
+            vertical-align:middle;
+        }
+        .navbar:hover {
+            font-weight: bold;
+        }
+        .containnav{
+            background-color: rgba(255,255,255,0.2);
+            font-size: 12px;
+            vertical-align: middle;
+
+            
+        }
+        
+/*        
+.button  {
+    display: inline-block;
+    border-top: 1px solid #96d1f8;
+    background: #65a9d7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+    background: -o-linear-gradient(top, #3e779d, #65a9d7);
+    padding: 2px 4px;
+    -webkit-border-radius: 31px;
+    -moz-border-radius: 31px;
+    border-radius: 31px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    vertical-align: middle;
+   }
+.button :hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.button a:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   } */
+       @media screen and (max-width: 800px){
+           
+            .sidenav, section {
+                    display: block;
+                    width: 100%;
+                    margin-right: 0;
+               
+           }
+           .sidenav li {
+                    display: inline-block
+           }
+            
+            
+        }
+        @media screen and (max-width: 450px){
+            
+            body {
+                    width: 100%;
+                    
+           }
+            header {
+                    border-radius: 0px;
             }
-        </style>
+            
+           .navbar li {
+                    display: block;
+                    margin: 10px auto;
+                    width: 80%;
+                    
+           }
+            
+            
+        }
+    
+    
+    </style>
     </head>
     
     <body>
-        <h1> Display </h1> 
+<!--        <h1> Display </h1> -->
         <br>
         <header>
-            <nav class="ilblock" >
-                <nl>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="first_page.html">Main Page</a></li>
-                    <li><a href="second_page.html">Second Page</a></li>
-                    <li><a href="cart.html">Panier</a></li>
-                </nl>
+            <h1> Mon Application </h1>
+            <ul class="containnav">
+                <li class="navbar" ><a>Home</a></li>
+                <li class="navbar" ><a>Contact</a></li>
+                <li class="navbar" ><a>Product</a></li>
+            </ul>
+
+        </header>
+            <nav class="sidenav">    
+                <ul>
+                    <li><a href="">Page 1</a></li>
+                    <li><a href="">Page 2</a></li>
+                    <li><a href="">Page 3</a></li>
+                    <li><a href="">Page 4</a></li>
+                </ul>
                 
         
-            </nav>
-            <div class="ilblock">
+            </nav><!-- espace imcompressible commenté 
+            --><Section>
+                <article>
+                    <!-- <div class="ilblock">
                     <label for="area1">Zone de texte</label><br>
                     <textarea name="area1" id="zonedetexte" wrap="soft" rows="10" cols="50" placeholder="Votre texte ici" draggable="false">
                     </textarea>
             
             
-            </div>
-        </header>
+                    </div> -->
+                    <h1>Lorem Ipsum</h1>
+                    
+
+                    <img src="img/chargement.gif" class="lettrine" width="100">
+                    <p>
+                    Thalassius vero ea tempestate praefectus praetorio praesens ipse quoque adrogantis ingenii, considerans incitationem eius ad multorum augeri discrimina, non maturitate vel consiliis mitigabat, ut aliquotiens celsae potestates iras principum molliverunt, sed adversando iurgandoque cum parum congrueret, eum ad rabiem potius evibrabat, Augustum actus eius exaggerando creberrime docens, idque, incertum qua mente, ne lateret adfectans. quibus mox Caesar acrius efferatus, velut contumaciae quoddam vexillum altius erigens, sine respectu salutis alienae vel suae ad vertenda opposita instar rapidi fluminis irrevocabili impetu ferebatur.</p>
+
+                    <p>Illud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine abes, tantum te a verborum libertate seiungas; deinde ut ea in alterum ne dicas, quae cum tibi falso responsa sint, erubescas. Quis est enim, cui via ista non pateat, qui isti aetati atque etiam isti dignitati non possit quam velit petulanter, etiamsi sine ulla suspicione, at non sine argumento male dicere? Sed istarum partium culpa est eorum, qui te agere voluerunt; laus pudoris tui, quod ea te invitum dicere videbamus, ingenii, quod ornate politeque dixisti.</p>
+
+                    <p>Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes etiam si lapsantibus plantis fruticeta prensando vel dumos ad vertices venerint summos, inter arta tamen et invia nullas acies explicare permissi nec firmare nisu valido gressus: hoste discursatore rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.</p>
+
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/img3.jpg" alt="img">
+                        <figcaption> le faucheu </figcaption>
+                    </figure>
+                </article>        
+            </Section>
+
+        <footer>
+            copyright moi
+        </footer>
     </body>

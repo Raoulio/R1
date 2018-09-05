@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+* {
+    box-sizing: border-box;
+    
+    /* permet au navigateur de gerer paddind et margin sans depasser la taille definie.
+    le *{} genere une classe 'globale' */ 
+
+
+    table-layout="fixed";
+    font-family: Titillium Web, sans-serif;
+    text-decoration: none;
+
+
+}
+
+#navbararea header {
+    /* header */
+    display: block;
+    background-color: rgba(200,200,200,1.00);
+    width: 100%;
+    border: 2px solid black;
+    padding: 2px;
+    margin: 2px;
+    vertical-align: top;
+ /*   position: fixed; */
+}
+
+#openpanelarea {  /*openpanel nav, openpanel div ????
+    /* Button to open navpannel | size 2/8 */
+    width: 13%;
+    display: inline-block;
+    border: 1px solid red;
+    text-align: left;
+    
+}
+
+#titletextarea {
+    /* Title in the middle of the header | size 4/8 */
+    width: 73%;
+    display: inline-block;
+    border: 1px solid red;
+    text-align: justify;
+    vertical-align: top;
+}
+
+#connectarea {
+    /* connexion area | size 2/8 */
+    width: 13%;
+    display: inline-block;
+    text-align: right;
+    border: 1px solid red;
+    
+}
+
+#mainarea {
+    /* Main Area including left pannel and newsbox */
+    display: block;
+    background-color: rgba(200,200,200,1.00);
+    width: 100%;
+    border: 2px solid black;
+    padding: 2px;
+    margin: 2px;    
+}
+    
+#leftpanelarea nav a {
+    /* inside left panel */
+    display: block; /* <-stack buttons \°/     */
+    border: 1px solid yellow;
+    text-decoration: none;
+    width: 100%;
+    padding: 2px;
+    margin: 2px; 
+
+    
+}
+
+#leftpanelarea nav a:hover {
+    text-decoration: underline;
+} 
+
+
+
+#leftpanelarea {
+    /* Left pannel area displayed or not */
+    width: 13%;
+    display: table-cell;
+    border: 2px solid green;
+    text-align: left;
+    padding: 2px;
+    margin: 2px;
+    vertical-align: top;
+    /*position: fixed;*/
+    /*display: none;*/
+    
+    
+}
+
+
+
+#newsboxarea {
+    /* News box, main */
+    display: inline-block;
+    display: table-cell;
+    width:auto;
+    max-width: 30%; 
+    min-height: 200px;
+    border: 1px solid purple;
+    text-align: left;
+    padding: 2px;
+    margin: 2px;
+    vertical-align: top;
+    
+}
+
+#footarea {
+    /* bottom of the page */
+
+    
+}
+
+.openpanelbutton{
+    /* open menu button */
+
+    
+}
+.leftpanelbutton{
+    
+    width: auto;
+
+}
+
+.titletext {
+    /*   */
+    
+}
+
+.connectbutton {
+    /*   */
+    display: inline-block;
+    
+}
+
+.notOnDesktop {
+    /*  */
+    display: none;
+    
+    
+}
+body {
+    /* .... */
+    background-color: rgba(200,200,200,1.00);
+    color: #325050;
+    width: 75%;
+    padding: 10px;
+    border-left: 1px double black;
+    border-right: 1px double black;
+    margin: 5px auto;
+    font-family: 'Julius Sans One', sans-serif;
+    min-height: 100px;
+    min-height: 100px;
+    
+}
+
+    @media screen and (max-width: 800px){
+           
+}
+    @media screen and (max-width: 450px){
+           
+}
+
